@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "font";
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "font";
+}
+a {
+  text-decoration: none;
+}
+
+#home {
+  background: url("../images/header-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5555;
+  background-color: #212529;
+}
+nav .container {
+  padding: 20px 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 150px;
+}
+.menuPhone {
+  display: none;
+}
+.navLinks {
+  list-style: none;
+}
+.navLinks li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navLinks a {
+  display: inline-block;
+  color: #ffff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.navLinks a:hover {
+  color: #ffc800;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffff;
+  text-align: center;
+}
+
+.content h1 {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.btn {
+  background-color: #ffc800;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+/* Start Section Services */
+#services {
+  text-align: center;
+}
+
+#services h1 {
+  font-size: 40px;
+}
+
+#services .container {
+  padding: 80px 60px;
+}
+
+#services .container .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+#services .cards .card {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.card .icon {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  background-color: #ffc800;
+  color: #fff;
+  font-size: 60px;
+  margin: 40px 0 10px 0;
+}
+
+#services p {
+  color: #6c757d;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#services .card .info {
+  color: #6c757d;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  width: 95%;
+}
+
+/* start Section Portfolio  */
+#portfolio {
+  text-align: center;
+  background-color: #f8f9fa;
+}
+#portfolio .container {
+  padding: 90px 100px;
+}
+#portfolio .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+#portfolio .card {
+  position: relative;
+  width: 31%;
+  background-color: #fff;
+}
+#portfolio img {
+  width: 100%;
+}
+.cardImage {
+  position: relative;
+}
+.cardImage:hover .overlay {
+  opacity: 1;
+}
+.card .cardContent {
+  padding: 20px;
+}
+.cardContent p {
+  font-size: 16px;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.cardImage .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 200, 0, 0.8);
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s all;
+}
+#portfolio .title {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+#portfolio .titleSub {
+  color: #6c757d;
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 60px 0;
+}
+/* Start Section Contact */
+#contact {
+  background: url("/assets/images/map-image.png");
+  background-size: cover;
+  background-color: #212529;
+}
+#contact .container {
+  padding: 80px 120px;
+}
+#contact h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#contact p {
+  color: #6c757d;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+#contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact .formInputs {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+#contact input {
+  padding: 25px 20px;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  background-color: #fff;
+  color: #ced4da;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+#contact .formRight {
+  width: 50%;
+}
+.formRight textarea {
+  height: 100%;
+}
+#contact .formLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.formBtn {
+  padding: 25px 50px;
+  font-size: 18px;
+}
+
+/* Start Footer */
+footer .container {
+  padding: 20px 120px;
+}
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #212529;
+}
+.footerHead {
+  font-size: 15px;
+}
+.footerFoot {
+  font-size: 15px;
+  display: flex;
+  gap: 20px;
+}
+footer .social {
+  display: flex;
+  gap: 20px;
+}
+footer .social i {
+  background-color: #212529;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .container {
+    padding: 15px 20px !important;
+  }
+  #portfolio .card {
+    width: 98% !important;
+  }
+  .content p {
+    font-size: 30px;
+  }
+  .footerContent {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #contact .container {
+    padding: 40px 20px;
+  }
+
+  .navLinks li {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #services .cards .card {
+    width: 90%;
+  }
+  #portfolio .container {
+    padding: 40px 20px;
+  }
+  #contact .formInputs {
+    flex-direction: column;
+  }
+  #contact .formRight,
+  #contact .formLeft {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  nav .container {
+    padding: 15px 120px;
+    flex-direction: column;
+    background-color: #212529;
+  }
+  .menu {
+    display: block;
+    color: #fff;
+  }
+  .logoBtn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menuPhone {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding: 8px 10px;
+    justify-content: end;
+    align-items: center;
+  }
+  .menuPhone i {
+    margin-left: 5px;
+  }
+  .menuPhone:hover .navLinks {
+    display: block;
+  }
+  .navLinks {
+    width: 100%;
+    background-color: #212529;
+    color: #fff;
+    display: none;
+  }
+  .navLinks li {
+    width: 100%;
+    padding: 5px;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .navLinks li a {
+    width: 100%;
+    display: inline-block !important;
+  }
+  .content p {
+    font-size: 50px;
+  }
+  #portfolio .card {
+    width: 48%;
+  }
+  .footerContent {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
