@@ -219,7 +219,7 @@ nav .container {
 }
 /* Start Section Contact */
 #contact {
-  background: url("/assets/images/map-image.png");
+  background: url("../images/map-image.png");
   background-size: cover;
   background-color: #212529;
 }
